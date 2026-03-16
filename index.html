@@ -965,8 +965,8 @@ function switchCompany(ticker) {
   document.getElementById(`panel-${ticker}`).classList.add('active');
   document.getElementById(`ctab-${ticker}`).classList.add('active');
   currentTicker = ticker;
-  // Scroll to top of content
-  window.scrollTo({top: document.querySelector('.company-tabs-bar').offsetTop + document.querySelector('.company-tabs-bar').offsetHeight, behavior: 'smooth'});
+  // Scroll to top of page
+   window.scrollTo({top: 0, behavior: 'smooth'});
   // Build charts for this stock
   setTimeout(() => {
     buildChartsForStock(ticker);
